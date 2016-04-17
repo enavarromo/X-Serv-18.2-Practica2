@@ -5,6 +5,7 @@ urlpatterns = patterns('',
     # New, for P2
     url(r'^$', 'acorta.views.homePage'),
     url(r'^favicon.ico/$', 'acorta.views.favicon'),
+    url(r'(.*)/', 'acorta.views.GetShort'),
 
     # Old resources
     url(r'^createPage/$', 'acorta.views.createPage'),
